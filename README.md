@@ -1,5 +1,3 @@
-# pivo
+# Pivo
 
-Pivo App
-
-The best way to dynamically look for beer in Prague.
+Pivo App - The best way to look for beer in Prague.
