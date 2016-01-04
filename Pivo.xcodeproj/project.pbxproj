@@ -482,6 +482,7 @@
 				29113B831C3AC7FE00A1D664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29113B841C3AC7FE00A1D664 /* Build configuration list for PBXNativeTarget "PivoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				29113B861C3AC7FE00A1D664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29113B871C3AC7FE00A1D664 /* Build configuration list for PBXNativeTarget "PivoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				29113B891C3AC7FE00A1D664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
