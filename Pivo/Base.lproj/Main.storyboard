@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,17 +19,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZMD-oR-aGC">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro-background" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-Wx-Zrx">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="orV-qm-eJt">
+                                <rect key="frame" x="20" y="145" width="560" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="orV-qm-eJt" secondAttribute="height" multiplier="500:277" id="E1b-EL-fiQ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZMD-oR-aGC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GHa-Kg-ogH"/>
-                            <constraint firstItem="ZMD-oR-aGC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="JXm-V5-j0J"/>
-                            <constraint firstAttribute="trailing" secondItem="ZMD-oR-aGC" secondAttribute="trailing" id="W1S-Em-7Gd"/>
-                            <constraint firstItem="ZMD-oR-aGC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jR9-a2-vBJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="orV-qm-eJt" secondAttribute="trailing" id="5pA-Wl-cmy"/>
+                            <constraint firstItem="d6a-Wx-Zrx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7bb-ZS-I4n"/>
+                            <constraint firstItem="orV-qm-eJt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AJ3-rX-wzP"/>
+                            <constraint firstItem="d6a-Wx-Zrx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EoE-m6-0yN"/>
+                            <constraint firstAttribute="trailing" secondItem="d6a-Wx-Zrx" secondAttribute="trailing" id="GoU-gi-3Hk"/>
+                            <constraint firstItem="orV-qm-eJt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Jfj-0m-NJr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d6a-Wx-Zrx" secondAttribute="bottom" id="RtR-Nq-PEn"/>
+                            <constraint firstItem="orV-qm-eJt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWW-9R-PlW"/>
+                            <constraint firstItem="orV-qm-eJt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sVN-8J-3mz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jfj-0m-NJr"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -36,6 +54,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1000" height="916"/>
+        <image name="intro-background" width="296" height="500"/>
+        <image name="logo" width="500" height="277"/>
     </resources>
 </document>
